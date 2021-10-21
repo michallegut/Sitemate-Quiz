@@ -5,15 +5,24 @@
     <title>Sitemate Quiz</title>
   </head>
   <body>
-      <button id="dialog-button" class="basic-button">Click me</button>
-      <confirmation-dialog id="dialog"></confirmation-dialog>
-      <h2 id="dialog-response" class="basic-header-2">Placeholder</h2>
+      <button id="dialog-button-1" class="basic-button">Click me1</button>
+      <confirmation-dialog id="dialog-1"></confirmation-dialog>
+      <h2 id="dialog-response-1" class="basic-header-2"></h2>
+
+      <button id="dialog-button-2" class="basic-button">Click me2</button>
+      <confirmation-dialog id="dialog-2"></confirmation-dialog>
+      <h2 id="dialog-response-2" class="basic-header-2"></h2>
 
       <script>
-          const dialogButton = document.getElementById('dialog-button');
-          const dialog = document.getElementById('dialog');
-          const dialogResponse = document.getElementById('dialog-response');
-          dialogButton.onclick = () => dialog.display('Are you sure you want to continue?', (response) => dialogResponse.innerText = `You just clicked "${response}"`);
+          const dialogButton1 = document.getElementById('dialog-button-1');
+          const dialog1 = document.getElementById('dialog-1');
+          const dialogResponse1 = document.getElementById('dialog-response-1');
+          dialogButton1.onclick = () => dialog1.display('Are you sure you want to continue?1', (response) => dialogResponse1.innerText = `You just clicked "${response}"1`);
+      
+          const dialogButton2 = document.getElementById('dialog-button-2');
+          const dialog2 = document.getElementById('dialog-2');
+          const dialogResponse2 = document.getElementById('dialog-response-2');
+          dialogButton2.onclick = () => dialog2.display('Are you sure you want to continue?2', (response) => dialogResponse2.innerText = `You just clicked "${response}"2`);
       </script>
       <script src="ConfirmationDialog/ConfirmationDialog.js"></script>
   </body>
