@@ -1,0 +1,14 @@
+body {
+    background-color: gainsboro;
+}
+
+.basic-button {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 50px;
+    margin: 50px;
+}
