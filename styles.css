@@ -1,5 +1,6 @@
 body {
     background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .basic-button {
@@ -11,4 +12,5 @@ body {
     padding: 5px 10px;
     min-width: 50px;
     margin: 50px;
+    cursor: pointer;
 }

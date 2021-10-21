@@ -1,0 +1,39 @@
+.confirmation-dialog-backscreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.confirmation-dialog {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation-dialog-buttons-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.confirmation-dialog-button {
+    background-color: white;
+    border: 1px solid lightgray;
+    color: gray;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 50px;
+    margin: 25px;
+    cursor: pointer;
+}
