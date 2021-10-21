@@ -5,9 +5,16 @@
     <title>Sitemate Quiz</title>
   </head>
   <body>
-      <button class="basic-button">Click me</button>
-      <confirmation-dialog />
+      <button id="dialog-button" class="basic-button">Click me</button>
+      <confirmation-dialog id="dialog" />
+      <h1 id="dialog-response"></h1>
 
+      <script>
+          const dialogButton = document.getElementById('dialog-button');
+          const dialog = document.getElementById('dialog');
+          const dialogResponse = document.getElementById('dialog-response');
+          dialogButton.onclick = () => dialog.display('Are you sure you want to continue?', (response) => dialogResponse.innerText = `You just clicked "${response}"`);
+      </script>
       <script src="ConfirmationDialog/ConfirmationDialog.js"></script>
   </body>
 </html>

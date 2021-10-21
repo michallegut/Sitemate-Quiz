@@ -1,4 +1,4 @@
-.confirmation-dialog-backscreen {
+#confirmation-dialog-backscreen {
     position: fixed;
     left: 0;
     top: 0;
@@ -18,6 +18,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#confirmation-dialog-message {
+    text-align: center;
 }
 
 .confirmation-dialog-buttons-wrapper {
