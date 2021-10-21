@@ -33,6 +33,11 @@ class ConfirmationDialog extends HTMLElement {
         this.shadowRoot.querySelector('#confirmation-dialog-yes-button').addEventListener('click', this.handleButtonClick.bind(this));
         this.shadowRoot.querySelector('#confirmation-dialog-cancel-button').addEventListener('click', this.handleButtonClick.bind(this));
     }
+
+    disconnectedCallback() {
+        this.shadowRoot.querySelector('#confirmation-dialog-yes-button').removeEventListener('click', this.handleButtonClick.bind(this));
+        this.shadowRoot.querySelector('#confirmation-dialog-cancel-button').removeEventListener('click', this.handleButtonClick.bind(this));
+    }
 }
 
 window.customElements.define('confirmation-dialog', ConfirmationDialog);
