@@ -15,6 +15,15 @@ body {
     cursor: pointer;
 }
 
+.basic-button:hover {
+    background-color: lightgray;
+}
+
+.basic-button:active {
+    background-color: gray;
+    color: white;
+}
+
 .basic-header-2 {
     margin-left: 50px;
 }
